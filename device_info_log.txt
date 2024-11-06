@@ -1,0 +1,30 @@
+
+
+--- Device Info Logged at 2024-11-06 22:14:52.397073 ---
+Device Name: mujjo
+System: Linux
+System Version: #1 SMP PREEMPT_DYNAMIC Kali 6.8.11-1kali2 (2024-05-30)
+Processor: 
+Machine: x86_64
+IP Address: 192.168.39.175
+MAC Address: 6e:bb:ef:bc:f1:c4
+Current User: muzaffar
+OS Release: 6.8.11-amd64
+Total RAM: 15.51 GB
+Available RAM: 13.14 GB
+Disk Total: 46.82 GB
+Disk Used: 38.79 GB
+Disk Free: 5.62 GB
+System Uptime: 0:35:30.396724
+Network Interfaces: 
+lo:
+  127.0.0.1
+  ::1
+  00:00:00:00:00:00
+wlan0:
+  192.168.39.175
+  fe80::6267:20ff:fe49:bbc4%wlan0
+  60:67:20:49:bb:c4
+docker0:
+  172.17.0.1
+  02:42:b9:b5:e2:83
