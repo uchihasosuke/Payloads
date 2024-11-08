@@ -170,7 +170,7 @@ def main():
 
     # Close SSH connection
     ssh_client.close()
-    print("download faild")
+    print("download failed")
 
 if __name__ == "__main__":
     main()

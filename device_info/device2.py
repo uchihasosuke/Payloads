@@ -11,7 +11,7 @@ import getpass
 import os
 
 # SSH connection details
-TERMUX_IP = "192.168.39.25"  # Replace with Termux IP address
+TERMUX_IP = "192.168.x.x"  # Replace with Termux IP address
 TERMUX_PORT = 8022  # Default Termux SSH port
 USERNAME = "u0_a269"  # Termux username, usually 'u0_a'
 PASSWORD = "7869"  # The password you set with `passwd`
