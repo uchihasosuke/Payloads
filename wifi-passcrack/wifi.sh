@@ -1,15 +1,14 @@
 #!/bin/bash
 
-# Script to download and run wifi6.py with sudo
+# Script to download and run wifi-passcrack.py with sudo
 
-# Check if wifi6.py exists locally
-if [ -f "wifi6.py" ]; then
-    echo "Running existing wifi6.py..."
-    sudo python3 wifi6.py
+# Check if wifi-pass.py exists locally
+if [ -f "wifi-passcrack.py" ]; then
+    echo "Running existing wifi-passcrack.py..."
+    sudo python3 wifi-passcrack.py
 else
-    echo "Downloading wifi6.py from GitHub..."
-    git clone https://github.com/yourusername/wifi6.git
-    cd wifi6
-    sudo python3 wifi6.py
+    echo "Downloading wifi-passcrack.pyfrom GitHub..."
+    git clone https://github.com/uchihasosuke/Payloads.git
+    cd Payloads/wifi-passcrack
+    sudo python3 wifi-passcrack.py
 fi
-
