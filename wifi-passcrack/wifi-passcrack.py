@@ -9,26 +9,6 @@ import csv
 import os
 import time
 import shutil
-    # Export to additional hash formats (for CrackStation compatibility example, though not standard for WPA)
-    md5_output = f"{cap_file_base}_md5.hash"
-    sha1_output = f"{cap_file_base}_sha1.hash"
-    # Placeholder example: generating MD5 and SHA1 hashes of the .22000 file content
-    # Caution: This is not WPA cracking compatible directly with CrackStation
-    with open(converted_file, 'rb') as f:
-        data = f.read()
-        md5_hash = hashlib.md5(data).hexdigest()
-        sha1_hash = hashlib.sha1(data).hexdigest()
-
-    # Write hashes to respective files
-    with open(md5_output, 'w') as f:
-        f.write(md5_hash)
-    with open(sha1_output, 'w') as f:
-        f.write(sha1_hash)
-    
-    print(f"MD5 hash saved to {md5_output}")
-    print(f"SHA1 hash saved to {sha1_output}")
-
-
 import hashlib
 from datetime import datetime
 
