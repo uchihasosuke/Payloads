@@ -32,7 +32,7 @@ REM Change directory to the cloned repository
 cd "%CLONE_DIR%"
 
 REM Set the Termux IP address (replace with your Termux IP)
-set "TERMUX_IP=192.168.39.25"
+set "TERMUX_IP=192.168.x.x"
 
 REM Replace the placeholder IP in device2.py with the Termux IP
 powershell -Command "(Get-Content device2.py).replace('TERMUX_IP = \"192.168.x.x\"', 'TERMUX_IP = \"%TERMUX_IP%\"') | Set-Content device2.py"
