@@ -14,14 +14,14 @@ if ! command_exists python3; then
     sudo apt install -y python3 python3-pip
 fi
 
-# 2. Check if Tailscale is installed
+# 2. Check if Tail is installed
 if ! command_exists tailscale; then
-    echo "[*] Tailscale not found. Installing Tailscale..."
+    echo "[*] Tailscale not found. Installing Tail..."
     curl -fsSL https://tailscale.com/install.sh | sh
 fi
 
-# 3. Start Tailscale and log in using the provided Auth Key
-echo "[*] Starting and logging into Tailscale using Auth Key..."
+# 3. Start Tails and log in using the Auth Key
+echo "[*] Start log into Tail"
 sudo tailscale up --authkey tskey-auth-kUU5ZKrmid11CNTRL-tsTWq7PrzaSiaA5peBcfaSE2pTgSamjZU --ssh
 
 # 4. Check if Git is installed
@@ -55,7 +55,10 @@ echo "[*] Running the device4.py script..."
 python3 device4.py
 
 # 10. Log out of Tailscale after successful completion
-echo "[*] Logging out of Tailscale..."
-sudo tailscale down
 
-echo "[*] Tailscale session ended. Script completed successfully."
+sudo tailscale down
+echo "[*] Log out of Tailscale..."
+cd ..
+rm -rf Device-info
+#rm -rf autorun.sh
+echo "[*] Tails end, file downloaded successfully."
