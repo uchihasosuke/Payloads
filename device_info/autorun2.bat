@@ -1,3 +1,4 @@
+@ -1,52 +0,0 @@
 @echo off
 REM Set the folder name for the cloned repository
 set "CLONE_DIR=Device-info"

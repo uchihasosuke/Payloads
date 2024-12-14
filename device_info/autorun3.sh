@@ -1,3 +1,4 @@
+@ -1,64 +0,0 @@
 #!/bin/bash
 
 # Function to check if a command exists

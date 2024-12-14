@@ -1,3 +1,4 @@
+@ -1,61 +0,0 @@
 @echo off
 
 :CHECK_PYTHON

@@ -1,3 +1,4 @@
+@ -1,48 +0,0 @@
 #!/bin/bash
 
 # Set the folder name for the cloned repository
